@@ -2,6 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 // Exporting the command module
 module.exports = {
+    category: 'utility',
     // Defining the command data using SlashCommandBuilder
     data: new SlashCommandBuilder()
         .setName('ping') // Setting the command name to 'ping'
