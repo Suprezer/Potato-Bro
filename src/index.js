@@ -10,6 +10,9 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds]});
 // Creating a new Collection to store commands
 client.commands = new Collection();
 
+// Creating a new Collection to store cooldowns
+client.cooldowns = new Collection();
+
 const foldersPath = path.join(__dirname, 'commands');
 const commandFolders = fs.readdirSync(foldersPath);
 
