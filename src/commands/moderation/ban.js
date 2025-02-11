@@ -1,5 +1,4 @@
 const { SlashCommandBuilder, PermissionFlagsBits, InteractionContextType } = require('discord.js');
-const { category, cooldown, data } = require('./kick');
 
 module.exports = {
     category: 'moderation',
