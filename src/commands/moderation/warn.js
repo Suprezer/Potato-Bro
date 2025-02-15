@@ -16,12 +16,12 @@ module.exports = {
                 .setName('reason')
                 .setDescription('The reason for warning the user')
                 .setRequired(false)),
+
     async execute(interaction) {
         const user = await interaction.options.getUser('user');
         const reason = await interaction.options.getString('reason') ?? 'No reason provided';
 
         await interaction.reply(`Warned ${user.tag} with the reason: ${reason}`);
-        await interaction.guild.member.warn(user, { reason });
-        
+        //await interaction.guild.user.warn(user, { reason });
     }
 };

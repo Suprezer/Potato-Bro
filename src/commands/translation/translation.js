@@ -6,7 +6,7 @@ module.exports = {
     category: 'translation',
     cooldown: 1,
     data: new SlashCommandBuilder()
-        .setName('translation')
+        .setName('t')
         .setDescription('Translate a text using DeepL')
         .addStringOption(option =>
             option
